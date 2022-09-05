@@ -10,7 +10,6 @@ This program sums the numbers from 1 to 100 using Gauss formula and for-loop.
 
 int main()
 {
-   
     int n = 100;
     int G_sum = 0; 
     int L_sum = 0;
@@ -26,19 +25,18 @@ int main()
          L_sum=L_sum+i;
 
     }
-   
+
+    //  compare answers
 
     if ( L_sum == G_sum){
         
-        std::cout<< " Gauss sum : " <<  G_sum << std::endl;
-        std::cout<< " Loop sum : " << L_sum <<std:: endl;
+        std::cout<< " Gauss sum : " <<  G_sum << "\n" << " Loop sum : "<< L_sum << std::endl;
         std::cout<< " Both results are the same! " << std::endl; 
 
     }else{
        std::cout<< " Results doesn't match! " << std::endl; 
     }
   
-
   return 0;
 }
 
