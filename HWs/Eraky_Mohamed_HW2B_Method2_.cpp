@@ -7,28 +7,38 @@ HW2B-isPrime!
 
 #include <iostream>
 #include <cmath>
-
+#include <iomanip>
 
 using namespace std;
 
+bool isprime =false; 
 
-
-bool isPrime(int n){
+void isPrime(int n){
     if (n==0 || n==1){
-        return false;
+        cout<< "The number " << n << " is: NOT PRIME " <<endl;
 
     }else if(n==2){
-        return true;
+        cout<< "The number " << n << " is: PRIME " <<endl;
     }
     else{
         for (int i = 2; i< n;i++ ){
             if(n % i == 0){
-                return false;}
-
+                isprime =false;
+                break;
+                
+            }else{
+                isprime =true;
+    
+            }
+        }
+        if (isprime == true){
+            cout<< "The number " << n << " is : PRIME " <<endl;
+        }else if(isprime ==false){
+            cout<< "The number " << n << " is : NOT PRIME " <<endl;
         }
   
     }
-    return true;
+
 }
 int main()
 {
@@ -48,7 +58,7 @@ int main()
         cin >>n;  
         }
 
-       
-        isPrime(n) ? cout<< "The number " << n << " is : PRIME ":cout << "The number " << n << " is: Not PRIME " <<endl;
+        isPrime(n);
+    
   return 0;
 }
