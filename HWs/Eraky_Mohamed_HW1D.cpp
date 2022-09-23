@@ -23,7 +23,7 @@ int main()
          
             }    
 
-    cout <<"sum1F =" <<setprecision(7)<<sum1F<<",  sum2F =" <<sum2F<<endl; 
+    cout <<"sum1F =" <<sum1F<<",  sum2F =" <<sum2F<<endl; 
 
 
     double sum1D =0.0;
@@ -31,14 +31,15 @@ int main()
 
     for ( double i=1 ;i <=100;i++){
         sum1D=sum1D +1.0/i ; 
+        
             }
 
     for ( double i=100 ;i >=1;i--){
         sum2D=sum2D +1.0/i ; 
          
             }    
-    
     cout <<"sum1D =" <<sum1D<<",  sum2D =" <<sum2D<<endl;
+
     cout <<"sum1F - sum2F = " <<sum1F-sum2F<<endl;
     cout <<"sum1D - sum2D = " <<sum1D-sum2D<<endl;
         
